@@ -1,0 +1,151 @@
+body{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	height: 100%;
+}
+
+#ensemble{
+	flex-direction:row;
+	margin-top: -10px;
+}
+
+nav{
+	margin-top: 10px;
+	width: 15%;
+	float: left;
+    background-color: rgb(196, 115, 61);
+	position: fixed;
+	height: 100%
+}
+
+section{
+	margin-left:15%;
+}
+
+nav h1{
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	text-align: center;
+}
+
+#sect1{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header{
+	font-family: 'Sedgwick Ave', cursive;
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	background-color: rgba(57,75,106,0.85);
+	
+}
+
+#conteneur{
+	min-height: 100%;
+
+}
+
+section h1{
+	font-family: 'Amatic SC', cursive;
+	color: red;
+}
+
+section article{
+	width: 48%;
+	margin-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+section p{
+	text-align: justify;
+}
+
+article:nth-child(1) {
+	border-bottom: 2px black solid;
+	border-right: 2px black solid;
+}
+
+article:nth-child(2) {
+	border-bottom: 2px black solid;
+	border-left: 2px black solid;
+}
+
+article:nth-child(3) {
+	width: 100%;
+	border-bottom: 2px black solid;
+}
+article:nth-child(4) {
+	width: 100%;
+	border-bottom: 2px black solid;
+}
+
+ul.menu li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content {
+	margin: 0;
+    padding: 0;
+	list-style-type:none;
+    display: none;
+	position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	left:80px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: auto;
+}
+
+ul.menu li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.menu li{
+	border-bottom: 1px solid white;
+}
+
+a:link{
+	text-decoration:none
+}
+
+#fond{
+	margin-left: 32%;
+	margin-top: 50px;
+}
