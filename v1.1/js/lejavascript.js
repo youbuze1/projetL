@@ -1,12 +1,14 @@
 var z;
 
-function dessiner(){
+function dessiner(mode){
   var canvas = document.getElementById('fond');
   if (canvas.getContext) {
   var ctx = canvas.getContext('2d');
   var type;
   var x = 0;
   var y =0;
+  var mode;
+  mode=mode;
   type = Math.floor(Math.random() * Math.floor(3));
 
 switch (type){
@@ -65,12 +67,13 @@ break;
 }
 }
 
-function dessiner_piece(forme){
+function dessiner_piece(forme,mode){
 var forme;
 var angle=Math.floor(Math.random()*4);
 var xdep=0; //position x départ pour translate
 var ydep=0; //position y départ pour translate
 var rotate=0; //rotate est l'angle d'inclinaison de la piece
+mode=mode;
 
 if(angle==0){
 	var xdep=0; 
